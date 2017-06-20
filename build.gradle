@@ -3,7 +3,7 @@ plugins {
     id "com.jfrog.artifactory" version "3.1.1"
 }
 
-version "1.0.0"
+version "1.0.1-SNAPSHOT"
 group "com.rodrifmed.dataintegration"
 
 apply plugin: 'maven-publish'
