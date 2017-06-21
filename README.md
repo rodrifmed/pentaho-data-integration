@@ -20,7 +20,7 @@
 It's simple, you just need to create a TransformationManager, passing parameters if you need, and then "executeTransformation" passing
 your transformation path.
 
-- Example use:
+- Example simple use:
 ```java
 
   TransformationManager manager = new TransformationManager();
@@ -30,6 +30,28 @@ your transformation path.
 
   manager.executeTransformation("transformations/hello_world.ktr");
   
+```
+
+- Example database use:
+- Note: You have to create a connection name in your ktr
+```java
+
+ TransformationManager manager = new TransformationManager();
+
+  Map<String, String> parameters = new HashMap<String, String>();
+  parameters.put("HELLO_WORLD", "Hello World");
+  
+  manager.setParameters(parameters);
+  
+  manager.setDbHostName("<YOUR-DB-HOST>");
+  manager.setDbPort("<YOUR-DB-PORT>");
+  manager.setDbName("<YOUR-DB-NAME>");
+  manager.setDbUerName("<YOUR-DB-USER-NAME>");
+  manager.setDbPassword("<YOUR-DB-PASSWORD>");
+  manager.setConnectionName("<YOUR-CONNECTION-NAME>");
+
+  manager.executeTransformation("transformations/your_ktr.ktr");
+
 ```
 
 ## TODO-LIST
