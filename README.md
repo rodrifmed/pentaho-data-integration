@@ -8,6 +8,12 @@
  - This project is a library to help schedule or execute pentaho data integration transformations (ktr) in your java projects.
  - The project was built using the pentaho's java api
  - http://www.pentaho.com/product/data-integration
+ 
+## How to install?
+
+ 1) Donwload the tag 1.0.0 (https://github.com/rodrifmed/pentaho-data-integration/tree/1.0.0)
+ 2) Run gradle command publishToMavenLocal
+ 3) In your project put the dependency com.rodrifmed.dataintegration:pentaho-dataintegration:1.0.0
 
 ## How to use?
 
@@ -26,3 +32,6 @@ your transformation path.
   
 ```
 
+## TODO-LIST
+
+ - Put the project in the maven public repository
